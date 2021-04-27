@@ -2,6 +2,7 @@
 *.pyc
 *!
 __pycache__
+mysite/settings.py
 
 # Env
 .env
@@ -13,6 +14,9 @@ db.sqlite3
 
 # Static folder at project root
 /static/
+
+# vim
+*.swp
 
 # macOS
 ._*
