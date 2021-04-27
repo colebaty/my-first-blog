@@ -16,7 +16,7 @@ db.sqlite3
 /static/
 
 # vim
-*.swp
+.*.swp
 
 # macOS
 ._*

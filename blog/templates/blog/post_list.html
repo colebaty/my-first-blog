@@ -2,10 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Look here, motherfucker</title>
+    <title>Django Blog</title>
 </head>
 <body>
-    <p>It works!</p>
-    <p>Look at me!</p>
+    <h1>
+        <header><a href="/">Django Girls Blog</a></header>
+    </h1>
+
+    {% for post in posts %}
+        <article>
+            <time>published: {{ post.published_date }}</time>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </article>
+    {% endfor %}
 </body>
 </html>
